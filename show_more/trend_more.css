@@ -171,7 +171,6 @@ body {
     padding: 16px;
     background-color: #111;
     color: #fff;
-
 }
 
 .srch-div{
@@ -297,11 +296,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1em;
     margin: 0em;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
 }
 
 img{
@@ -559,17 +553,4 @@ img{
     width: 35px;
     height: 35px;
     display: block;
-}
-
-/* DELL LOGO */
-#dell-logo{
-    width: 10%;
-    height: auto;
-}
-
-@media (max-width: 1068px){
-    #dell-logo{
-        width: 15%;
-        height: auto;
-    }
 }

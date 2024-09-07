@@ -157,26 +157,21 @@ body {
     }
 }
 
+/*      MAIN         */
 
-/* MAIN */
 
-.top-h1{
+.top-h1 {
     /* border: 1px solid red; */
     margin: 2em 0em;
     font-size: 32pt;
     font-family: Poppins, Open-sans, Arial ,sans-serif;
     font-weight: 700;
     text-align: center; /* Center the heading on all devices */
-
-    padding: 16px;
-    background-color: #111;
-    color: #fff;
-
 }
 
-.srch-div{
+.srch-div {
     /* border: 1px solid red; */
-    /* margin-bottom: 2em; */
+    /* margin: 0% 30%; */
     padding: 12px;
     width: 100%;
 
@@ -186,27 +181,17 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 #srch{
     /* border: 1px solid red; */
-    margin: 0em 0%;
+    margin: 0em 0em;
     padding: 12px;
-    width: 70%;
+    width: 80%;
     outline: none;
-    border-radius: 8px;
-    border: 1px solid #000;
-}
-#srch:focus{
-    border: 1px solid #0b70d5;
 }
 
 .fa-magnifying-glass{
     border: 1px solid #444;
     padding: 12px;
-
-    color: #fff;
-    border-radius: 8px;
-    background-color: #111;
 }
 
 .fa-magnifying-glass:hover{
@@ -214,44 +199,159 @@ body {
     color: dodgerblue;
 }
 
-.div-1{
+/* Content */
+.grand-div{
     /* border: 1px solid blue; */
-    width: 100%;
-    padding: 12px;
-    margin: 1em 0em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: start;
+    background-color: #fff;
+    margin-top: 5em;
 }
 
-.chld-div{
+.father-div {
+    /* border: 1px solid blue; */
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.mother-div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    width: 72%;
+}
+
+
+.pro-name {
+    font-size: 32pt;
+    margin-bottom: 0.5em;
+    font-family: Open-sans, Arial ,sans-serif;
+}
+
+.chld-div-1 ul {
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    padding: 12px 6px;
+    gap: 12px; /* Add spacing between list items */
 }
 
-.chld-div a{
+.chld-div-1 ul li {
+    list-style-type: none;
+    font-family: Open-sans, Poppins, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.chld-div-1 h2{
+    font-family: Poppins, Open-sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.chld-div-2 {
+    margin-top: 2em;
+}
+
+.chld-div-2 h2{
+    font-family: Poppins, Open-sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.chld-div-2 p {
+    line-height: 1.5; /* Use a decimal for line height */
+    font-family: Open-sans, Poppins, Arial, Helvetica, sans-serif;
+}
+
+/* Contact Section */
+.chld-div-3 {
+    /* border: 1px solid #000; */
+    text-decoration: none;
+    padding: 24px;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    font-family: Open-sans, Poppins, Arial, Helvetica, sans-serif;
+}
+
+.chld-div-3 a {
+    color: #fff;
+    font-family: Open-sans, Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.chld-div-3 .wa{
+    background-color: #128C7E;
+}
+.chld-div-3 .wa:hover{
+    background-color: #25D366;
+    transition: .2s all ease;
+}
+
+.chld-div-3 .insta{
+    background-color: #833AB4;
+}
+.chld-div-3 .insta:hover{
+    background-color: #405DE6;
+    transition: .2s all ease;
+}
+
+.chld-div-3 .wa, .chld-div-3 .insta {
+    /* border: 1px solid #000; */
+    text-decoration: none;
+    padding: 12px 24px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.chld-div-3 h4{
+    font-family: Poppins, Open-sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+/* Down Section */
+.div-1 {
+    /* border: 1px solid blue; */
+    width: 100%;
+    padding: 12px;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.chld-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.chld-div a {
     /* border: 1px solid orange; */
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-decoration: none;
     color: #111;
-    padding: 12px;
-    margin: 12px;
-
+    margin: 10px;
     font-family: sans-serif;
+
     background-color: #fff;
+    padding: 12px;
 }
 
-.chld-div a span{
+.chld-div a span {
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
@@ -259,7 +359,7 @@ body {
     width: 100%;
 }
 
-.tname{
+.tname {
     font-size: 14pt;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -267,7 +367,7 @@ body {
     padding: 8px;
 }
 
-.aname{
+.aname {
     font-size: 10pt;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -276,73 +376,96 @@ body {
     padding: 8px;
 }
 
-.reviews{
+.reviews {
     /* border: 1px solid blue; */
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     font-size: 10pt;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
     padding: 8px;
 }
 
-.top-h3{
+.top-h3 {
     /* border: 1px solid red; */
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1em;
-    margin: 0em;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
+    margin: 1em;
+    text-align: center; /* Center the heading */
 }
 
-img{
-    width: 128px;
-    margin: 12px;
+img {
+    width: 200px;
 }
 
-/*  HOVER    */
-.chld-div a:hover{
+/* Hover Effects */
+.chld-div a:hover {
     border: 1px solid royalblue;
-    scale: 1.1;
+    transform: scale(1.1);
     transition: .3s all ease-in;
 }
 
-
-/* MAIN MOBILE VIEW */
+/* Main Mobile View */
 @media (max-width: 1068px) {
-    .top-h1{
+    .father-div {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .mother-div {
+        width: 100%;
+        height: auto;
+    }
+
+    .pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .chld-div-3 a {
         text-align: center;
     }
 
-    .div-1 .top-h3{
-        /* border: 1px solid red; */
-        font-size: 24pt;
-        font-weight: 700;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .chld-div-1 ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 24px;
     }
 
-    .div-1{
-        /* border: 2px solid red; */
+    .top-h1{
+        /* border: 1px solid red; */
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Down Section */
+    .top-h3 {
+        text-align: center;
+    }
+
+    .chld-div-3 {
+        /* border: 1px solid #000; */
+        text-decoration: none;
+        padding: 24px;
+        margin-top: 2em;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 24px;
+        width: 100%;
     }
 }
 
-/* FOOTER */
+/*      FOOTER       */
 
 .footer {
-    background-color: #1f1f1f;
+    background-color: #2c2c2c;
     color: #fff;
     padding: 50px 0;
     position: relative;
@@ -372,6 +495,7 @@ img{
 .footer-section p,
 .footer-section ul,
 .footer-section a {
+    font-size: 1em;
     color: #d3d3d3;
     margin: 1em 0em;
     font-family:'Arial Narow Bold', sans-serif;
@@ -398,9 +522,9 @@ img{
 }
 
 .footer-section a i {
-    margin-right: 15px;
     color: #d3d3d3;
     transition: color 0.3s;
+    margin: 0em 0.5em;
 }
 
 .footer-section a:hover i {
@@ -416,8 +540,6 @@ img{
     bottom: 0;
     width: 100%;
     border-top: 1px solid #444;
-
-    font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .footer-bottom a{
@@ -441,7 +563,6 @@ img{
     align-items: center;
     line-height: 1.5;
 }
-
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 1068px) {
@@ -510,66 +631,112 @@ img{
     }
 }
 
-
-
-/* ICONS SETTINGS */
+/* ICONS */
 .fa-solid{
     margin: 0em 0.5em;
 }
 
-/* SHOW MORE */
-#more{
-    margin: 2em 2em 0em 2em;
-    padding: 16px;
-    border-radius: 15px;
-    background-color: #1e90ff;
-    width: max-content;
-
-    text-decoration: none;
-    color: #fff;
-
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-}
-#more:hover{
-    background-color: #0b70d5;
+/* Wrapper around the slider */
+.pic {
+    width: 80%;
+    max-width: 800px;  /* Limit max width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
+/* Slider container */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Ensures content stays within the container */
+}
 
-/* WhatsApp Button Styling */
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+/* Slides container */
+.slides {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    z-index: 1000;
-    text-decoration: none;
+    transition: transform 0.5s ease;
+    width: 100%;
+    gap: 5em;  /* Adds space between slides */
 }
 
-.whatsapp-button img {
-    width: 35px;
-    height: 35px;
+/* Individual slide images */
+.slides .pic1 {
+    width: calc(80% - 10px);  /* Adjust width to account for the gap */
+    height: auto;
+    object-fit: contain;  /* Ensures the entire image is visible */
+    margin-left: 5em;  /* Adds margin to the left of each image */
+    margin-right: 0em;
     display: block;
 }
 
-/* DELL LOGO */
-#dell-logo{
-    width: 10%;
+.slides .pic2,.pic3,.pic4 {
+    width: calc(80% - 10px);  /* Adjust width to account for the gap */
     height: auto;
+    object-fit: contain;  /* Ensures the entire image is visible */
+    margin-left: 3em;  /* Adds margin to the left of each image */
+    margin-right: 0em;
+    display: block;
 }
 
-@media (max-width: 1068px){
-    #dell-logo{
-        width: 15%;
-        height: auto;
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Ensure buttons are above all content */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 1068px) {
+    .slides {
+        gap: 0em;  /* Reduce the gap between slides */
+    }
+
+
+/* Individual slide images */
+.slides .pic1 {
+    width: calc(80% - 10px);  /* Adjust width to account for the gap */
+    height: auto;
+    object-fit: contain;  /* Ensures the entire image is visible */
+    margin-left: 0em;  /* Adds margin to the left of each image */
+    margin-right: 0em;
+    display: block;
+}
+
+.slides .pic2,.pic3 {
+    width: calc(80% - 10px);  /* Adjust width to account for the gap */
+    height: auto;
+    object-fit: contain;  /* Ensures the entire image is visible */
+    margin-left: 3.5em;  /* Adds margin to the left of each image */
+    margin-right: 0em;
+    display: block;
+}
+
+    .prev, .next {
+        width: 40px;  /* Smaller buttons on mobile */
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
     }
 }
+
