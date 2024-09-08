@@ -636,56 +636,6 @@ img {
     margin: 0em 0.5em;
 }
 
-/* Slider container */
-.slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slides img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Navigation buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    transform: translateY(-50%);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-/* Hide buttons on mobile if desired */
-@media (max-width: 1068px) {
-    .prev, .next {
-        display: none; /* Optional: Hide navigation buttons on mobile */
-    }
-}
-
 /* Wrapper around the slider */
 .pic {
     width: 80%;
@@ -700,7 +650,7 @@ img {
 .slider {
     position: relative;
     width: 100%;
-    overflow: hidden; /* Ensures content stays within the container */
+    overflow: visible; /* Allows the arrow buttons to be visible outside the container */
 }
 
 /* Slides container */
@@ -716,16 +666,16 @@ img {
     width: calc(80% - 10px);  /* Adjust width to account for the gap */
     height: auto;
     object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 5em;  /* Adds margin to the left of each image */
-    margin-right: 0em;
+    margin-left: 3em;  /* Adds margin to the left of each image */
+    margin-right: 2em;
     display: block;
 }
 
-.slides .pic2,.pic3 {
+.slides .pic2, .pic3 {
     width: calc(80% - 10px);  /* Adjust width to account for the gap */
     height: auto;
     object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 10em;  /* Adds margin to the left of each image */
+    margin-left: 3em;  /* Adds margin to the left of each image */
     margin-right: 0em;
     display: block;
 }
@@ -745,7 +695,7 @@ img {
     line-height: 50px;
     border-radius: 50%;
     transform: translateY(-50%);
-    z-index: 1000; /* Ensure buttons are above all content */
+    z-index: 1; /* Ensure buttons are above all content */
 }
 
 .prev {
@@ -762,25 +712,24 @@ img {
         gap: 0em;  /* Reduce the gap between slides */
     }
 
+    /* Individual slide images */
+    .slides .pic1 {
+        width: calc(80% - 10px);  /* Adjust width to account for the gap */
+        height: auto;
+        object-fit: contain;  /* Ensures the entire image is visible */
+        margin-left: 2em;  /* Adds margin to the left of each image */
+        margin-right: 1em;
+        display: block;
+    }
 
-/* Individual slide images */
-.slides .pic1 {
-    width: calc(80% - 10px);  /* Adjust width to account for the gap */
-    height: auto;
-    object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 0em;  /* Adds margin to the left of each image */
-    margin-right: 0em;
-    display: block;
-}
-
-.slides .pic2,.pic3 {
-    width: calc(80% - 10px);  /* Adjust width to account for the gap */
-    height: auto;
-    object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 3.5em;  /* Adds margin to the left of each image */
-    margin-right: 0em;
-    display: block;
-}
+    .slides .pic2, .pic3 {
+        width: calc(80% - 10px);  /* Adjust width to account for the gap */
+        height: auto;
+        object-fit: contain;  /* Ensures the entire image is visible */
+        margin-left: 2em;  /* Adds margin to the left of each image */
+        margin-right: 2em;
+        display: block;
+    }
 
     .prev, .next {
         width: 40px;  /* Smaller buttons on mobile */
@@ -788,5 +737,12 @@ img {
         font-size: 18px;
         line-height: 40px;
     }
-}
 
+    .prev {
+        left: -20px; /* Adjust as needed for spacing */
+    }
+
+    .next {
+        right: -20px; /* Adjust as needed for spacing */
+    }
+}

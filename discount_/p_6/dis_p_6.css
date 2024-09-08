@@ -653,7 +653,7 @@ img {
 .slider {
     position: relative;
     width: 100%;
-    overflow: hidden; /* Ensures content stays within the container */
+    overflow: visible; /* Allows the arrow buttons to be visible outside the container */
 }
 
 /* Slides container */
@@ -669,17 +669,17 @@ img {
     width: calc(80% - 10px);  /* Adjust width to account for the gap */
     height: auto;
     object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 4em;  /* Adds margin to the left of each image */
-    margin-right: 0em;
+    margin-left: 3em;  /* Adds margin to the left of each image */
+    margin-right: 2em;
     display: block;
 }
 
-.slides .pic2,.pic3 {
+.slides .pic2, .pic3 {
     width: calc(80% - 10px);  /* Adjust width to account for the gap */
     height: auto;
     object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 2em;  /* Adds margin to the left of each image */
-    margin-right: 2em;
+    margin-left: 3em;  /* Adds margin to the left of each image */
+    margin-right: 0em;
     display: block;
 }
 
@@ -702,11 +702,11 @@ img {
 }
 
 .prev {
-    left: 2px;
+    left: 10px;
 }
 
 .next {
-    right: 2px;
+    right: 10px;
 }
 
 /* Mobile responsive adjustments */
@@ -715,30 +715,37 @@ img {
         gap: 0em;  /* Reduce the gap between slides */
     }
 
+    /* Individual slide images */
+    .slides .pic1 {
+        width: calc(80% - 10px);  /* Adjust width to account for the gap */
+        height: auto;
+        object-fit: contain;  /* Ensures the entire image is visible */
+        margin-left: 2em;  /* Adds margin to the left of each image */
+        margin-right: 1.5em;
+        display: block;
+    }
 
-/* Individual slide images */
-.slides .pic1 {
-    width: calc(80% - 10px);  /* Adjust width to account for the gap */
-    height: auto;
-    object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 2em;  /* Adds margin to the left of each image */
-    margin-right: 0em;
-    display: block;
-}
-
-.slides .pic2,.pic3 {
-    width: calc(80% - 10px);  /* Adjust width to account for the gap */
-    height: auto;
-    object-fit: contain;  /* Ensures the entire image is visible */
-    margin-left: 2em;  /* Adds margin to the left of each image */
-    margin-right: 2em;
-    display: block;
-}
+    .slides .pic2, .pic3 {
+        width: calc(80% - 10px);  /* Adjust width to account for the gap */
+        height: auto;
+        object-fit: contain;  /* Ensures the entire image is visible */
+        margin-left: 1.5em;  /* Adds margin to the left of each image */
+        margin-right: 2em;
+        display: block;
+    }
 
     .prev, .next {
         width: 40px;  /* Smaller buttons on mobile */
         height: 40px;
         font-size: 18px;
         line-height: 40px;
+    }
+
+    .prev {
+        left: -20px; /* Adjust as needed for spacing */
+    }
+
+    .next {
+        right: -20px; /* Adjust as needed for spacing */
     }
 }
