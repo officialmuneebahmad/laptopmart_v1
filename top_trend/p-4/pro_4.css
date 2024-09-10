@@ -92,8 +92,19 @@ body {
     white-space: nowrap;
 }
 
+.not-allowed{
+    cursor: not-allowed;
+}
+
 .nav-items .dropdown-menu li a {
+    /* border: 1px solid red; */
     color: black;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .nav-items .dropdown-menu.active {
