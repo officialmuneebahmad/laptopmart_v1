@@ -318,7 +318,7 @@ img{
 .chld-div a:hover{
     border: 1px solid royalblue;
     scale: 1.1;
-    transition: .3s all ease-in;
+    transition: all .2s ease-in;
 }
 
 
@@ -576,4 +576,114 @@ img{
 #head-img{
     width: 100%;
     height: auto;
+    margin: 0px;
+}
+
+/* NEW DEALS Section */
+.new-deal {
+    border: 1px solid red;
+    background-color: royalblue;
+    color: #fff;
+    border-radius: 20px;
+    padding: 16px;
+    margin: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Flex layout for top section of new deals */
+.new-deal-top {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0em;
+    font-family: Poppins, 'Open Sans', sans-serif;
+}
+
+.new-deal-top h2 {
+    margin: 0em 1em;
+}
+
+/* Unordered list (items) */
+.new-deal ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* List items */
+.new-deal ul li {
+    list-style-type: none;
+    background-color: #fff;
+    color: #000;
+    margin: 0.3em;
+    padding: 12px;
+    border-radius: 12px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 20pt;
+    width: 48.5%;
+    position: relative; /* Allows WhatsApp button to be positioned */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* WhatsApp button (hidden by default) */
+.whatsapp-btn {
+    display: none;
+    text-decoration: none;
+}
+
+/* Hover effect for list items */
+.new-deal ul li:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Display WhatsApp button on hover */
+.new-deal ul li:hover .whatsapp-btn {
+    display: flex;
+    opacity: 1; /* Fade in the button */
+}
+
+/* WhatsApp button icon style */
+.whatsapp-btn i {
+    font-size: 2.7em;
+    color: white;
+}
+
+
+
+/* Media query for mobile view */
+@media screen and (max-width: 1068px) {
+    .new-deal {
+        padding: 12px;
+        margin: 1.5em 0;
+    }
+
+    .new-deal-top {
+        margin: 1.5em 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .new-deal-top h2 {
+        margin: 0.5em 0;
+        font-size: 1.5em;
+    }
+
+    .new-deal ul {
+        flex-direction: column;
+    }
+
+    .new-deal ul li {
+        padding: 10px;
+        margin: 0.2em 0;
+        width: 100%; /* Full width on mobile */
+        font-size: 0.9em;
+    }
 }
