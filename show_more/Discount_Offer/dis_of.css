@@ -259,6 +259,12 @@ body {
 
     font-family: sans-serif;
     background-color: #fff;
+
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+
+    transition: margin-top 0.5s ease;
 }
 
 .chld-div a span{
@@ -278,12 +284,16 @@ body {
 }
 
 .aname{
-    font-size: 10pt;
+    font-size: 12pt;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 16px;
     opacity: 0.7;
     padding: 8px;
+}
+
+.aname ul li{
+    list-style-position: inside;
 }
 
 .reviews{
@@ -310,16 +320,20 @@ body {
 }
 
 img{
-    width: 128px;
+    width: 100%;
+    height: auto;
     margin: 12px;
+    object-fit: cover;
 }
 
 /*  HOVER    */
 .chld-div a:hover{
     border: 1px solid royalblue;
-    scale: 1.1;
-    transition: .3s all ease-in;
+    transition: all .5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -2em;
 }
+
 
 
 /* MAIN MOBILE VIEW */
@@ -341,6 +355,10 @@ img{
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    .chld-div a{
+        width: 300px;
     }
 }
 
