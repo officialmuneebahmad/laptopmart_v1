@@ -370,6 +370,10 @@ img{
     color: #0b70d5;
 }
 
+.filter ul li:nth-child(5) a{
+    background-color: #0b70d5;
+}
+
 /* MAIN MOBILE VIEW */
 @media (max-width: 1068px) {
     .top-h1{
