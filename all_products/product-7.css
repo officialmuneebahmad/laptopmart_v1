@@ -181,34 +181,89 @@ body {
     text-align: center; /* Center the heading on all devices */
 }
 
-.srch-div {
-    /* border: 1px solid red; */
-    /* margin: 0% 30%; */
-    padding: 12px;
-    width: 100%;
-
+/* Search bar */
+.search-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
-}
-#srch{
-    /* border: 1px solid red; */
-    margin: 0em 0em;
-    padding: 12px;
-    width: 80%;
-    outline: none;
-}
-
-.fa-magnifying-glass{
-    border: 1px solid #444;
-    padding: 12px;
-}
-
-.fa-magnifying-glass:hover{
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 70%; /* Adjust max-width for responsiveness */
+    margin: 0 auto;
+    gap: 1em;
+  }
+  
+  #search-bar {
+    padding: 5px;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+    flex: 1;
+    padding: 1em 0.5em;
+  }
+  
+  #search-button {
+    padding: 1em 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    color: dodgerblue;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #search-button:hover {
+    background-color: #0056b6;
+  }
+  
+  @media (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #search-bar {
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Result items */
+  #search-results div {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    gap: 1em 1em;
+    margin: 1em 0em;
+    padding: 1em 1em;
+    border-radius: 5px;
+  }
+
+ /* Result items */
+ #search-results img{
+    width: 200px;
+    height: auto;
+  }
+
+#search-results h2, p, a{
+    font-family: Poppins, Open-Sans, Arial, Helvetica, sans-serif;
+    margin: 0.5em 0em;
+}
+
+#search-results a{
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: #0353CD;
+    color: #fff;
+    width: max-content;
+
+    text-decoration: none;
+
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+
+    border: none;
+}
+#search-results a:hover{
+    text-decoration: underline;
 }
 
 /* Content */
