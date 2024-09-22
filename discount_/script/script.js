@@ -153,7 +153,7 @@ searchButton.addEventListener('click', () => {
             <h2>${laptop.name}</h2>
             <p>${laptop.description}</p>
             <p>Price: Rs.${laptop.price},000/-</p>
-            <a href="./all_products/product-${laptop.id}.html" class="view-product-button">View Product</a>
+            <a href="../../all_products/product-${laptop.id}.html" class="view-product-button">View Product</a>
         `;
 
         searchResults.appendChild(resultItem);
