@@ -689,7 +689,7 @@ img{
 /* NEW DEALS Section */
 .new-deal {
     border: 1px solid red;
-    background-color: rgb(25, 61, 167);
+    background-color: #007bff;
     color: #fff;
     border-radius: 20px;
     padding: 16px;

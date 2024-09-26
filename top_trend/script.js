@@ -132,6 +132,20 @@ const laptops = [
         "image": "https://www.laptopmart.shop/imgs/show_more/1/640-g9.avif",
         "description": "The HP EliteBook 640 14\" G9 Notebook PC features an Intel Core i5-1265U processor, 16GB upgradeable RAM, a 512GB upgradeable NVMe SSD, and a 14\" Full HD display for excellent performance and flexibility."
     },
+    {
+        "id": 15,
+        "name": "HP ZBOOK STUDIO (G7)",
+        "price": 275,
+        "image": "https://drive.google.com/file/d/1Y52EHR8Zb4zKK32hde6hLOrvct0F5V2v/view?usp=sharing",
+        "description": "The HP ZBook Studio G7 is a powerful mobile workstation with a 10th Gen Intel Core i7, 32GB LPDDR4 RAM, and 512GB NVMe SSD. Its 15.6-inch edge-to-edge display and 4GB NVIDIA Quadro T1000 Max-Q make it ideal for high-end tasks."
+    },
+    {
+        "id": 16,
+        "name": "HP Elitebook 850 G5",
+        "price": 100,
+        "image": "https://drive.google.com/file/d/1gCp1TgpqVzBM0G8refasWDOs7P5mNoJo/view?usp=sharing",
+        "description": "The HP EliteBook 850 G5 features an 8th Gen Intel Core i7, 16GB DDR4 RAM, and 512GB NVMe SSD for ultra-fast performance. Its 15.6-inch UHD display, backlit keyboard, and 8GB Intel graphics make it ideal for gaming, rendering, freelancing, and online learning."
+    },
     
 ];
 
