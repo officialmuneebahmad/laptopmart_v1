@@ -146,6 +146,13 @@ const laptops = [
         "image": "https://www.laptopmart.shop/imgs/top%20trending/hp-850.png",
         "description": "The HP EliteBook 850 G5 features an 8th Gen Intel Core i7, 16GB DDR4 RAM, and 512GB NVMe SSD for ultra-fast performance. Its 15.6-inch UHD display, backlit keyboard, and 8GB Intel graphics make it ideal for gaming, rendering, freelancing, and online learning."
     },
+    {
+        "id": 17,
+        "name": "HP ELITEBOOK 630 G10",
+        "price": 100,
+        "image": "https://www.laptopmart.shop/imgs/discounted/630-g10.avif",
+        "description": "The HP Elitebook 630 G10 features a 13th gen Intel Core i7-1365U Hexacore processor, 16GB DDR4 RAM, and 512GB NVMe SSD for powerful performance. It has a 13.3-inch FHD IPS display and Intel UHD Graphics for crisp visuals."
+    },
     
 ];
 
