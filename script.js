@@ -136,14 +136,14 @@ const laptops = [
         "id": 15,
         "name": "HP ZBOOK STUDIO (G7)",
         "price": 275,
-        "image": "https://www,laptopmart.shop/imgs/top trending/zbook_studio_color_accuracy_ksp8.png",
+        "image": "https://www.laptopmart.shop/imgs/top%20trending/zbook_studio_color_accuracy_ksp8.png",
         "description": "The HP ZBook Studio G7 is a powerful mobile workstation with a 10th Gen Intel Core i7, 32GB LPDDR4 RAM, and 512GB NVMe SSD. Its 15.6-inch edge-to-edge display and 4GB NVIDIA Quadro T1000 Max-Q make it ideal for high-end tasks."
     },
     {
         "id": 16,
         "name": "HP Elitebook 850 G5",
         "price": 100,
-        "image": "https://www,laptopmart.shop/imgs/hp-850.png",
+        "image": "https://www.laptopmart.shop/imgs/top%20trending/hp-850.png",
         "description": "The HP EliteBook 850 G5 features an 8th Gen Intel Core i7, 16GB DDR4 RAM, and 512GB NVMe SSD for ultra-fast performance. Its 15.6-inch UHD display, backlit keyboard, and 8GB Intel graphics make it ideal for gaming, rendering, freelancing, and online learning."
     },
     
