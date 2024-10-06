@@ -1,0 +1,194 @@
+        /* NAV BAR */
+        .logo {
+            width: 64px;
+            border-radius: 8px;
+        }
+
+        .nav-title {
+            font-family: var(--defaultFont);
+            font-weight: var(--extraBold);
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 40%;
+
+        }
+
+        .nav-subtitle {
+            font-family: var(--defaultFont);
+            font-size: var(--smallFontSize);
+            font-weight: var(--normalFont);
+            
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 3em;
+            background-color: var(--white);
+            position: relative;
+            z-index: 10; /* Ensure the navbar is above other elements */
+            border-bottom: 1px solid var(--darkBlack);
+        }
+
+        /* Navigation Items */
+        .nav-items {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+        }
+
+        .nav-items li {
+            position: relative;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: var(--darkBlack);
+            font-family: var(--defaultFont);
+            font-weight: var(--normalFont);
+            font-size: 16px;
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .nav-items a:hover {
+            transition: .3s all;
+            color: var(--darkBlack);
+            background-color: #f3f4f5;
+            border-radius: 8px;
+        }
+
+        /* Burger Menu */
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 20; /* Ensure the burger menu is on top */
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: var(--darkBlack);
+            margin: 4px;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        /* Dropdown Menu */
+        .nav-items .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            list-style: none;
+            padding: 0;
+            margin: 0px;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            min-width: 100%;
+            border-radius: 8px;
+        }
+
+        .nav-items .dropdown-menu li {
+            padding: 0px;
+            white-space: nowrap;
+            /* border: 1px solid blue; */
+        }
+
+        .not-allowed {
+            cursor: not-allowed;
+        }
+
+        .nav-items .dropdown-menu li a {
+            color: black;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .nav-items .dropdown-menu.active {
+            display: block; /* Show when active class is added */
+        }
+
+        /* Responsive Styles for Mobile View */
+        @media (max-width: 1068px) {
+            .nav-title{
+                display: flex;
+                flex-wrap: wrap;
+                width: 70%;
+            }
+            .navbar {
+                flex-direction: row;
+                align-items: center;
+                padding: 1em;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .nav-items {
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                background-color: var(--white);
+                position: absolute;
+                top: 120px;
+                right: 0;
+                padding: 0;
+                transition: max-height 0.5s ease, opacity 0.5s ease;
+            }
+
+            .nav-items.active {
+                max-height: 2000px; /* Adjust this value based on your menu's content */
+                opacity: 1;
+                padding: 20px 0;
+            }
+
+            .nav-items li {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-items .dropdown-menu {
+                position: relative;
+                box-shadow: none;
+                width: 100%;
+            }
+
+            .nav-items .dropdown-menu li {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .nav-items a {
+                padding: 1em;
+                font-size: 20px;
+                font-family: 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+            }
+        }
+hr{
+    margin: 1em 0px;
+}
+
+/* ICONS SETTINGS */
+.fa-solid{
+    margin: 0em 0.5em 0em 0.2em;
+}

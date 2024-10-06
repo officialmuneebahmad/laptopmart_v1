@@ -1,0 +1,21 @@
+/* SHOW MORE */
+#more{
+    margin: 2em 2em 0em 2em;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #0353CD;
+    color: #fff;
+    width: max-content;
+
+    text-decoration: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    border: none;
+    
+}
+#more:hover{
+    background-color: #0353CD;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out; /* Add transition effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

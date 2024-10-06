@@ -7,74 +7,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="x-icon" href="../../imgs/405020729_311666671760709_8224782530826868502_n.jpg">
+    <link rel="stylesheet" href="../../centralized-navbar-css/navbar.css">
+    <link rel="stylesheet" href="../../centralized-footer-css/footer.css">
+    <link rel="stylesheet" href="../../centralized-showmore-button-css/button.css">
+    <link rel="stylesheet" href="../../centralized-search-css/search.css">
 </head>
 <body>
     
 <!-- NAV BAR -->
-<header>
-    <nav class="navbar">
-        <img class="logo" src="../../imgs/405020729_311666671760709_8224782530826868502_n.jpg" alt="Logo-img">
-        <div class="burger">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <ul class="nav-items">
-            <li><a href="../../index.html" target="_self"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li class="dropdown">
-                <a href="#" id="category-toggle">Categories <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="dropdown-menu" id="category-menu">
-                    <li><a href="../../category/dell/dell_home.html">DELL LAPTOPS<i class="fa-regular fa-circle-dot" style="color: #06ce00;"></i></a></li>
-                    <li><a href="../../category/hp/hp_home.html">HP LAPTOPS<i class="fa-regular fa-circle-dot" style="color: #06ce00;"></i></a></li>
-                    <li><a href="../../category/apple/macbooks.html">APPLE LAPTOPS<i class="fa-regular fa-circle-dot" style="color: #06ce00;"></i></a></li>
-                    <li><a class="not-allowed" href="#">ACER LAPTOPS<i class="fa-regular fa-circle-dot" style="color: #e81123;"></i></a></li>
-                    <li><a href="#">ASUS LAPTOPS<i class="fa-regular fa-circle-dot" style="color: #06ce00;"></i></a></li>
-                    <li><a href="#">ALIENWARE LAPTOPS &nbsp;<i class="fa-regular fa-circle-dot" style="color: #06ce00;"></i></a></li>
-                    <li><a class="not-allowed" href="#">TOSHIBA LAPTOPS &nbsp;<i class="fa-regular fa-circle-dot" style="color: #e81123;"></i></a></li>
-                    <li><a class="not-allowed" href="#">CHROMEBOOKS <i class="fa-regular fa-circle-dot" style="color: #e81123;"></i></a></li>
-                    <li><a href="../../category/forgaming/game.html">FOR GAMING<i class="fa-regular fa-circle-dot" style="color: #06ce00;"></i></a></li>
-                    <li><a href="../../category/worklaptops/work.html">FOR WORK/OFFICE &nbsp;<i class="fa-regular fa-circle-dot" style="color: #06ce00;"></i></a></li>
-                </ul>
-            </li>
-            <li><a href="https://maps.app.goo.gl/CbDQPQJu588bWSJaA" target="_blank"><i class="fa-solid fa-location-dot"></i> Location</a></li>
-            <li><a href="../../about.html" target="_blank"><i class="fa-solid fa-circle-info"></i> About</a></li>
-        </ul>
-    </nav>
-</header>
+    <div id="navbar"></div>
 
 
                     <!--        Main section              -->
     <main>
-        <h1 class="top-h1">LAPTOP MART MULTAN <p>THE BIGGEST WHOLESALE STORE IN PAKISTAN!</p> </h1>
         
-        <!-- BANNERS -->
-        <!-- <img id="head-img" src="./imgs/head-img.jpeg" alt="banner"> -->
-
-        <!-- BULK QUANTITY -->
-         <div class="new-deal">
-            <div class="new-deal-top"><i class="fa-solid fa-bullhorn fa-2xl"></i><h2>WE HAVE</h2><h1>🔥 BULK QUANTITY OF</h1><h2>HP | DELL | MACBOOKS</h2></div>
-            <ul>
-                <li>HP ELITEBOOK 840 G5 (New Logo) - Core i7 8th Generation | Rs. 80,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>HP ELITEBOOK 840 G5 - Core i5 8th Generation | Rs. 70,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>HP ELITEBOOK 840 G5 - Core i5 7th Generation | Rs. 60,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>HP ELITEBOOK 820 G2 - Core i7 5th Generation | Rs. 42,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>HP ELITEBOOK 840 G4 - Core i7 7th Generation | Rs. 60,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>HP PROBOOK 450 G2 - Core i7 5th Generation | Rs. 45,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>HP PROBOOK 640 G2 - Core i5 6th Generation | Rs. 42,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>HP PROBOOK 640 G3 - Core i5 7th Generation | Rs. 48,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5500 - Core i7 8th Generation | Rs. 80,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5400 - Core i5 8th Generation | Rs. 60,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5400 - Core i7 8th Generation | Rs. 70,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 7490 - Core i7 8th Generation | Rs. 70,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 7490 - Core i5 8th Generation | Rs. 60,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5540 - Core i5 4th Generation | Rs. 33,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5490 - Core i7 8th Generation | Rs. 65,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5490 - Core i5 8th Generation | Rs. 55,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5480 - Core i5 7th Generation | Rs. 48,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5480 - Core i5 6th Generation | Rs. 42,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-                <li>Dell Latitude 5570 - Core i5 6th Generation | Rs. 45,000/- <a class="whatsapp-btn" href="https://wa.link/laptopmartmultan"><i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #25d366;"></i></a></li>
-            </ul>
-         </div>
+        <div id="search"></div>
 
          <!-- FILTERS -->
           <div class="filter">
@@ -193,41 +140,7 @@
 
     <!-- FOOTER -->
      <!--        Footer section              -->
-     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section about">
-                <h2>About Us</h2>
-                <p>
-                    We are committed to provide the best laptops all around Pakistan. 
-                    Stay connected with us through our social media channels.
-                </p>
-            </div>
-            <div class="footer-section links">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="./pri_policy.html"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a></li>
-                    <li><a href="./terms_con.html"><i class="fa-solid fa-file"></i> Terms & Conditions</a></li>
-                    <li><a href="./junaid_umar.html"><i class="fa-solid fa-user"></i> Know JUNAID UMAR QURESHI</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact">
-                <h2>Contact Us</h2>
-                <p><i class="fa-solid fa-location-dot"></i>Shop # 1, Indus Tower, Ghanta Ghar, Inner City, Multan, Punjab 60000, Pakistan</p>
-                <p><i class="fa-solid fa-phone"></i> +92 303 5044384 <br> +92 307 7369659</p>
-                <p><i class="fa-solid fa-envelope"></i> laptopmartmultan@gmail.com</p>
-            </div>
-            <div class="footer-section social">
-                <h2>Follow Us</h2>
-                <a href="https://bit.ly/3MyxTWh"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://bit.ly/3XczIgA"><i class="fab fa-twitter"></i></a>
-                <a href="https://bit.ly/3XeTXKM"><i class="fab fa-instagram"></i></a>
-                <a href="https://bit.ly/4cZrAWC"><i class="fab fa-tiktok"></i></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2024 | Designed with ❤️ From LAPTOPMART TEAM 💻
-        </div>
-    </footer>
+       <div id="footer"></div>
 
     <a href="https://wa.link/laptopmartmultan" class="whatsapp-button" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">

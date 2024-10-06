@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --gery: #cecbcb;
+    --white: #ffffff;
+    --darkBlack: #161616;
+
+    --defaultFont: "Nunito", "Inter", "Open-sans", "Poppins", Arial, Helvetica, sans-serif;
+
+    --smallFont: 200;
+    --normalFont: 500;
+    --boldFont: 700;
+    --extraBold: 900;
+
+    --smallFontSize: 14px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--white);
+    color: var(--darkBlack);
+    padding: 50px 0;
+    position: relative;
+    border-top: 1px solid var(--darkBlack);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--darkBlack);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: var(--darkBlack);
+    margin: 1em 0em;
+    font-family:'Arial Narow Bold', sans-serif;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    margin: 1em 0em;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--darkBlack);
+    transition: color 0.3s;
+    padding: 12px 0px;
+    border-radius: 8px;
+}
+
+.footer-section ul li a:hover {
+    background-color: #f3f4f5;
+    color: var(--darkBlack);
+}
+
+.footer-section a i {
+    margin-right: 15px;
+    color: var(--darkBlack);
+    transition: color 0.3s;
+    padding: 8px 8px;
+    border-radius: 50px;
+}
+
+.footer-section a:hover i {
+    color: var(--darkBlack);
+    background-color: #f3f4f5;
+}
+
+.footer-bottom {
+    background-color: #1f1f1f;
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #444;
+
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.footer-bottom a{
+    color: dodgerblue;
+}
+
+.contact p{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid orange; */
+    line-height: 1.5;
+}
+
+.links li a{
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    line-height: 1;
+}
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 1068px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 1em;
+        position: relative;
+    }
+
+    #top-heading-1 {
+        font-size: 24pt;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1em 0.5em 2em 0.5em;
+        text-align: center;
+    }
+
+    #top-heading-2{
+        font-size: 18pt;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1em 0.5em 2em 0.5em;
+        text-align: center;
+    }
+
+    #section-1-items {
+        flex-direction: column;
+        margin: 1.5em 0.5em;
+    }
+
+    .section-img, .details {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .details h1 {
+        font-size: 28pt;
+    }
+
+    .footer-container {
+        /* border: 1px solid snow; */
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .contact p{
+        margin: 1em 0em;
+    }
+
+    .footer-section.social {
+        /* border: 1px solid snow; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .social a{
+        padding-bottom: 1.5em;
+    }
+}
+
+/* SEPARATION VERTICLE LINES  */
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    /* Add a right border to all sections except the last one */
+    border-right: 1px solid var(--gery); /* Use the grey color from your root variables */
+    padding-right: 20px; /* Add some padding to avoid content overlapping the border */
+  }
+  
+  /* Remove the border from the last section ("Social") */
+  .footer-section:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+
